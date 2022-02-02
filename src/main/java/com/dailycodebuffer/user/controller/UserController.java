@@ -1,7 +1,7 @@
 package com.dailycodebuffer.user.controller;
 
 import com.dailycodebuffer.user.VO.ResponseTemplateVO;
-import com.dailycodebuffer.user.entity.User;
+import com.dailycodebuffer.user.entity.UserX;
 import com.dailycodebuffer.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ public class UserController {
     @Autowired
     private UserService userService;
     @PostMapping("/")
-    public User saveUser(@RequestBody User user){
+    public UserX saveUser(@RequestBody UserX user){
         log.info("inside saveUser method in user controller");
         return userService.saveUser(user);
     }

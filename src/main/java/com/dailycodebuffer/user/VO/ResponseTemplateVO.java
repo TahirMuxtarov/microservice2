@@ -1,6 +1,6 @@
 package com.dailycodebuffer.user.VO;
 
-import com.dailycodebuffer.user.entity.User;
+import com.dailycodebuffer.user.entity.UserX;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseTemplateVO {
-    private User user;
+    private UserX user;
     private Department department;
 }
